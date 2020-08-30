@@ -3,29 +3,55 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C3BF65824F83697003E9A0B /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3BF65724F83697003E9A0B /* HomeVC.swift */; };
+		4C3BF65A24F836AF003E9A0B /* CameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3BF65924F836AF003E9A0B /* CameraVC.swift */; };
+		4C3BF65C24F836D4003E9A0B /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3BF65B24F836D4003E9A0B /* SearchVC.swift */; };
+		4C3BF65E24F8370A003E9A0B /* NotificationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3BF65D24F8370A003E9A0B /* NotificationVC.swift */; };
+		4C3BF66024F83718003E9A0B /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3BF65F24F83718003E9A0B /* LoginVC.swift */; };
+		4C3BF66324F83734003E9A0B /* utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3BF66224F83733003E9A0B /* utilities.swift */; };
+		4C3BF66524F83744003E9A0B /* BaseServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3BF66424F83743003E9A0B /* BaseServices.swift */; };
+		4C9936D424FA16C400E9FC20 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C9936D324FA16C300E9FC20 /* AVFoundation.framework */; };
+		4C9936D724FA946D00E9FC20 /* videosCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9936D524FA946D00E9FC20 /* videosCell.swift */; };
+		4C9936D824FA946D00E9FC20 /* videosCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C9936D624FA946D00E9FC20 /* videosCell.xib */; };
 		4CBEB5FC24F817CD0012A958 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBEB5FB24F817CD0012A958 /* AppDelegate.swift */; };
 		4CBEB5FE24F817CD0012A958 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBEB5FD24F817CD0012A958 /* SceneDelegate.swift */; };
-		4CBEB60024F817CD0012A958 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBEB5FF24F817CD0012A958 /* ViewController.swift */; };
 		4CBEB60324F817CD0012A958 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CBEB60124F817CD0012A958 /* Main.storyboard */; };
 		4CBEB60624F817CD0012A958 /* febbler.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4CBEB60424F817CD0012A958 /* febbler.xcdatamodeld */; };
 		4CBEB60824F817D50012A958 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CBEB60724F817D50012A958 /* Assets.xcassets */; };
 		4CBEB60B24F817D50012A958 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CBEB60924F817D50012A958 /* LaunchScreen.storyboard */; };
+		4CBEB61324F8183B0012A958 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4CBEB61224F8183B0012A958 /* GoogleService-Info.plist */; };
+		4CEE0BC424F9406D00CB8541 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEE0BC324F9406D00CB8541 /* ProfileVC.swift */; };
+		EAB21B932FB929F4B302AABF /* Pods_febbler.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76A89B8F704B0EA0B10B2553 /* Pods_febbler.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4C3BF65724F83697003E9A0B /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		4C3BF65924F836AF003E9A0B /* CameraVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraVC.swift; sourceTree = "<group>"; };
+		4C3BF65B24F836D4003E9A0B /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
+		4C3BF65D24F8370A003E9A0B /* NotificationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationVC.swift; sourceTree = "<group>"; };
+		4C3BF65F24F83718003E9A0B /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		4C3BF66224F83733003E9A0B /* utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = utilities.swift; sourceTree = "<group>"; };
+		4C3BF66424F83743003E9A0B /* BaseServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseServices.swift; sourceTree = "<group>"; };
+		4C9936D324FA16C300E9FC20 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		4C9936D524FA946D00E9FC20 /* videosCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = videosCell.swift; sourceTree = "<group>"; };
+		4C9936D624FA946D00E9FC20 /* videosCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = videosCell.xib; sourceTree = "<group>"; };
 		4CBEB5F824F817CD0012A958 /* febbler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = febbler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CBEB5FB24F817CD0012A958 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4CBEB5FD24F817CD0012A958 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4CBEB5FF24F817CD0012A958 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4CBEB60224F817CD0012A958 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4CBEB60524F817CD0012A958 /* febbler.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = febbler.xcdatamodel; sourceTree = "<group>"; };
 		4CBEB60724F817D50012A958 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4CBEB60A24F817D50012A958 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4CBEB60C24F817D50012A958 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CBEB61224F8183B0012A958 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4CEE0BC324F9406D00CB8541 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		76A89B8F704B0EA0B10B2553 /* Pods_febbler.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_febbler.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A8F0EC29512050D4392426E /* Pods-febbler.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-febbler.debug.xcconfig"; path = "Target Support Files/Pods-febbler/Pods-febbler.debug.xcconfig"; sourceTree = "<group>"; };
+		E8931D471945C34501BBFA21 /* Pods-febbler.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-febbler.release.xcconfig"; path = "Target Support Files/Pods-febbler/Pods-febbler.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +59,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C9936D424FA16C400E9FC20 /* AVFoundation.framework in Frameworks */,
+				EAB21B932FB929F4B302AABF /* Pods_febbler.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4C3BF66124F83722003E9A0B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4C3BF65724F83697003E9A0B /* HomeVC.swift */,
+				4C9936D524FA946D00E9FC20 /* videosCell.swift */,
+				4C9936D624FA946D00E9FC20 /* videosCell.xib */,
+				4C3BF65924F836AF003E9A0B /* CameraVC.swift */,
+				4C3BF65B24F836D4003E9A0B /* SearchVC.swift */,
+				4C3BF65D24F8370A003E9A0B /* NotificationVC.swift */,
+				4C3BF65F24F83718003E9A0B /* LoginVC.swift */,
+				4CEE0BC324F9406D00CB8541 /* ProfileVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		4CBEB5EF24F817CD0012A958 = {
 			isa = PBXGroup;
 			children = (
 				4CBEB5FA24F817CD0012A958 /* febbler */,
 				4CBEB5F924F817CD0012A958 /* Products */,
+				970A66EB93E1D380E3589608 /* Pods */,
+				B0EE051D7B8672B8EF4FE3A3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,14 +105,35 @@
 			children = (
 				4CBEB5FB24F817CD0012A958 /* AppDelegate.swift */,
 				4CBEB5FD24F817CD0012A958 /* SceneDelegate.swift */,
-				4CBEB5FF24F817CD0012A958 /* ViewController.swift */,
+				4C3BF66224F83733003E9A0B /* utilities.swift */,
+				4C3BF66424F83743003E9A0B /* BaseServices.swift */,
+				4C3BF66124F83722003E9A0B /* Controllers */,
 				4CBEB60124F817CD0012A958 /* Main.storyboard */,
 				4CBEB60724F817D50012A958 /* Assets.xcassets */,
 				4CBEB60924F817D50012A958 /* LaunchScreen.storyboard */,
+				4CBEB61224F8183B0012A958 /* GoogleService-Info.plist */,
 				4CBEB60C24F817D50012A958 /* Info.plist */,
 				4CBEB60424F817CD0012A958 /* febbler.xcdatamodeld */,
 			);
 			path = febbler;
+			sourceTree = "<group>";
+		};
+		970A66EB93E1D380E3589608 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9A8F0EC29512050D4392426E /* Pods-febbler.debug.xcconfig */,
+				E8931D471945C34501BBFA21 /* Pods-febbler.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B0EE051D7B8672B8EF4FE3A3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4C9936D324FA16C300E9FC20 /* AVFoundation.framework */,
+				76A89B8F704B0EA0B10B2553 /* Pods_febbler.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,9 +143,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4CBEB60F24F817D50012A958 /* Build configuration list for PBXNativeTarget "febbler" */;
 			buildPhases = (
+				1F6F0FFB5A125FB27DE4A2E6 /* [CP] Check Pods Manifest.lock */,
 				4CBEB5F424F817CD0012A958 /* Sources */,
 				4CBEB5F524F817CD0012A958 /* Frameworks */,
 				4CBEB5F624F817CD0012A958 /* Resources */,
+				B020154871D56EBBFB9623B2 /* [CP] Embed Pods Frameworks */,
+				B8D4639FE52C6E94384DD556 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -128,7 +197,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C9936D824FA946D00E9FC20 /* videosCell.xib in Resources */,
 				4CBEB60B24F817D50012A958 /* LaunchScreen.storyboard in Resources */,
+				4CBEB61324F8183B0012A958 /* GoogleService-Info.plist in Resources */,
 				4CBEB60824F817D50012A958 /* Assets.xcassets in Resources */,
 				4CBEB60324F817CD0012A958 /* Main.storyboard in Resources */,
 			);
@@ -136,15 +207,82 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1F6F0FFB5A125FB27DE4A2E6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-febbler-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B020154871D56EBBFB9623B2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-febbler/Pods-febbler-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-febbler/Pods-febbler-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-febbler/Pods-febbler-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B8D4639FE52C6E94384DD556 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-febbler/Pods-febbler-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-febbler/Pods-febbler-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-febbler/Pods-febbler-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4CBEB5F424F817CD0012A958 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4CBEB60024F817CD0012A958 /* ViewController.swift in Sources */,
+				4C3BF66324F83734003E9A0B /* utilities.swift in Sources */,
+				4C3BF65C24F836D4003E9A0B /* SearchVC.swift in Sources */,
+				4C3BF66524F83744003E9A0B /* BaseServices.swift in Sources */,
 				4CBEB5FC24F817CD0012A958 /* AppDelegate.swift in Sources */,
+				4C3BF66024F83718003E9A0B /* LoginVC.swift in Sources */,
+				4C3BF65824F83697003E9A0B /* HomeVC.swift in Sources */,
+				4C3BF65A24F836AF003E9A0B /* CameraVC.swift in Sources */,
 				4CBEB60624F817CD0012A958 /* febbler.xcdatamodeld in Sources */,
 				4CBEB5FE24F817CD0012A958 /* SceneDelegate.swift in Sources */,
+				4C9936D724FA946D00E9FC20 /* videosCell.swift in Sources */,
+				4CEE0BC424F9406D00CB8541 /* ProfileVC.swift in Sources */,
+				4C3BF65E24F8370A003E9A0B /* NotificationVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +424,7 @@
 		};
 		4CBEB61024F817D50012A958 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A8F0EC29512050D4392426E /* Pods-febbler.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -303,6 +442,7 @@
 		};
 		4CBEB61124F817D50012A958 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8931D471945C34501BBFA21 /* Pods-febbler.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
