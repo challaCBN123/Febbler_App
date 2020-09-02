@@ -14,6 +14,8 @@
 		4C3BF66024F83718003E9A0B /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3BF65F24F83718003E9A0B /* LoginVC.swift */; };
 		4C3BF66324F83734003E9A0B /* utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3BF66224F83733003E9A0B /* utilities.swift */; };
 		4C3BF66524F83744003E9A0B /* BaseServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3BF66424F83743003E9A0B /* BaseServices.swift */; };
+		4C4E453524FCE846005757A5 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4E453424FCE846005757A5 /* PlayerView.swift */; };
+		4C4E453724FCEE29005757A5 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C4E453624FCEE29005757A5 /* AVKit.framework */; };
 		4C9936D424FA16C400E9FC20 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C9936D324FA16C300E9FC20 /* AVFoundation.framework */; };
 		4C9936D724FA946D00E9FC20 /* videosCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9936D524FA946D00E9FC20 /* videosCell.swift */; };
 		4C9936D824FA946D00E9FC20 /* videosCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C9936D624FA946D00E9FC20 /* videosCell.xib */; };
@@ -24,7 +26,9 @@
 		4CBEB60824F817D50012A958 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CBEB60724F817D50012A958 /* Assets.xcassets */; };
 		4CBEB60B24F817D50012A958 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CBEB60924F817D50012A958 /* LaunchScreen.storyboard */; };
 		4CBEB61324F8183B0012A958 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4CBEB61224F8183B0012A958 /* GoogleService-Info.plist */; };
+		4CEC1AB324FFA277009C322F /* messageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEC1AB224FFA277009C322F /* messageVC.swift */; };
 		4CEE0BC424F9406D00CB8541 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEE0BC324F9406D00CB8541 /* ProfileVC.swift */; };
+		4CF08D6D24FE13DA00D678A3 /* urlData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF08D6C24FE13DA00D678A3 /* urlData.swift */; };
 		EAB21B932FB929F4B302AABF /* Pods_febbler.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76A89B8F704B0EA0B10B2553 /* Pods_febbler.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +40,8 @@
 		4C3BF65F24F83718003E9A0B /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		4C3BF66224F83733003E9A0B /* utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = utilities.swift; sourceTree = "<group>"; };
 		4C3BF66424F83743003E9A0B /* BaseServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseServices.swift; sourceTree = "<group>"; };
+		4C4E453424FCE846005757A5 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
+		4C4E453624FCEE29005757A5 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
 		4C9936D324FA16C300E9FC20 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		4C9936D524FA946D00E9FC20 /* videosCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = videosCell.swift; sourceTree = "<group>"; };
 		4C9936D624FA946D00E9FC20 /* videosCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = videosCell.xib; sourceTree = "<group>"; };
@@ -48,7 +54,9 @@
 		4CBEB60A24F817D50012A958 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4CBEB60C24F817D50012A958 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4CBEB61224F8183B0012A958 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4CEC1AB224FFA277009C322F /* messageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = messageVC.swift; sourceTree = "<group>"; };
 		4CEE0BC324F9406D00CB8541 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		4CF08D6C24FE13DA00D678A3 /* urlData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = urlData.swift; sourceTree = "<group>"; };
 		76A89B8F704B0EA0B10B2553 /* Pods_febbler.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_febbler.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A8F0EC29512050D4392426E /* Pods-febbler.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-febbler.debug.xcconfig"; path = "Target Support Files/Pods-febbler/Pods-febbler.debug.xcconfig"; sourceTree = "<group>"; };
 		E8931D471945C34501BBFA21 /* Pods-febbler.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-febbler.release.xcconfig"; path = "Target Support Files/Pods-febbler/Pods-febbler.release.xcconfig"; sourceTree = "<group>"; };
@@ -61,6 +69,7 @@
 			files = (
 				4C9936D424FA16C400E9FC20 /* AVFoundation.framework in Frameworks */,
 				EAB21B932FB929F4B302AABF /* Pods_febbler.framework in Frameworks */,
+				4C4E453724FCEE29005757A5 /* AVKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +82,7 @@
 				4C3BF65724F83697003E9A0B /* HomeVC.swift */,
 				4C9936D524FA946D00E9FC20 /* videosCell.swift */,
 				4C9936D624FA946D00E9FC20 /* videosCell.xib */,
+				4CEC1AB224FFA277009C322F /* messageVC.swift */,
 				4C3BF65924F836AF003E9A0B /* CameraVC.swift */,
 				4C3BF65B24F836D4003E9A0B /* SearchVC.swift */,
 				4C3BF65D24F8370A003E9A0B /* NotificationVC.swift */,
@@ -107,6 +117,8 @@
 				4CBEB5FD24F817CD0012A958 /* SceneDelegate.swift */,
 				4C3BF66224F83733003E9A0B /* utilities.swift */,
 				4C3BF66424F83743003E9A0B /* BaseServices.swift */,
+				4C4E453424FCE846005757A5 /* PlayerView.swift */,
+				4CF08D6C24FE13DA00D678A3 /* urlData.swift */,
 				4C3BF66124F83722003E9A0B /* Controllers */,
 				4CBEB60124F817CD0012A958 /* Main.storyboard */,
 				4CBEB60724F817D50012A958 /* Assets.xcassets */,
@@ -130,6 +142,7 @@
 		B0EE051D7B8672B8EF4FE3A3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4C4E453624FCEE29005757A5 /* AVKit.framework */,
 				4C9936D324FA16C300E9FC20 /* AVFoundation.framework */,
 				76A89B8F704B0EA0B10B2553 /* Pods_febbler.framework */,
 			);
@@ -274,10 +287,13 @@
 				4C3BF66324F83734003E9A0B /* utilities.swift in Sources */,
 				4C3BF65C24F836D4003E9A0B /* SearchVC.swift in Sources */,
 				4C3BF66524F83744003E9A0B /* BaseServices.swift in Sources */,
+				4CF08D6D24FE13DA00D678A3 /* urlData.swift in Sources */,
 				4CBEB5FC24F817CD0012A958 /* AppDelegate.swift in Sources */,
+				4CEC1AB324FFA277009C322F /* messageVC.swift in Sources */,
 				4C3BF66024F83718003E9A0B /* LoginVC.swift in Sources */,
 				4C3BF65824F83697003E9A0B /* HomeVC.swift in Sources */,
 				4C3BF65A24F836AF003E9A0B /* CameraVC.swift in Sources */,
+				4C4E453524FCE846005757A5 /* PlayerView.swift in Sources */,
 				4CBEB60624F817CD0012A958 /* febbler.xcdatamodeld in Sources */,
 				4CBEB5FE24F817CD0012A958 /* SceneDelegate.swift in Sources */,
 				4C9936D724FA946D00E9FC20 /* videosCell.swift in Sources */,

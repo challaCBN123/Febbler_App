@@ -7,17 +7,17 @@
 //
 
 import UIKit
+import AVFoundation
 
 class CameraVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+         
     }
     
 
-    @IBAction func didTapBack(_ sender:UIBarButtonItem){
+    @IBAction func didTapBack(_ sender:UIButton){
         self.dismiss(animated: true, completion: nil)
     }
 }

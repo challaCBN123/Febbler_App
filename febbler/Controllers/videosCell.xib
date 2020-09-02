@@ -16,6 +16,10 @@
                 <rect key="frame" x="0.0" y="0.0" width="360" height="441"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="euj-4F-QyA">
+                        <rect key="frame" x="0.0" y="0.0" width="360" height="441"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jQF-hm-ww4">
                         <rect key="frame" x="20" y="20" width="320" height="30"/>
                         <subviews>
@@ -53,9 +57,9 @@
                                 <rect key="frame" x="0.0" y="0.0" width="96.5" height="50"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x0w-FC-OVw">
-                                        <rect key="frame" x="0.0" y="0.0" width="96.5" height="26.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="96.5" height="29"/>
                                         <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <state key="normal" image="heart" catalog="system">
+                                        <state key="normal" image="heart.fill" catalog="system">
                                             <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                             <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="heavy"/>
                                         </state>
@@ -64,8 +68,8 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ev6-A8-tJK">
-                                        <rect key="frame" x="0.0" y="26.5" width="96.5" height="23.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <rect key="frame" x="0.0" y="29" width="96.5" height="21"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="12"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -74,8 +78,8 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="q4u-Lo-aYE">
                                 <rect key="frame" x="111.5" y="0.0" width="97" height="50"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mhP-V4-2nh">
-                                        <rect key="frame" x="0.0" y="0.0" width="97" height="28"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mhP-V4-2nh">
+                                        <rect key="frame" x="0.0" y="0.0" width="97" height="50"/>
                                         <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" image="message.fill" catalog="system">
                                             <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
@@ -85,12 +89,6 @@
                                             <action selector="didTapMessage:" destination="gTV-IL-0wX" eventType="touchUpInside" id="Xf2-T2-WfL"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LmC-ke-9SP">
-                                        <rect key="frame" x="0.0" y="28" width="97" height="22"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Xq0-xE-8pt">
@@ -115,7 +113,7 @@
                         </constraints>
                     </stackView>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tjt-j6-UUt">
-                        <rect key="frame" x="285" y="190.5" width="75" height="60"/>
+                        <rect key="frame" x="305" y="190.5" width="55" height="60"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pencil" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="M0A-S2-QTX">
                                 <rect key="frame" x="10" y="12.5" width="40" height="35.5"/>
@@ -129,7 +127,7 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="75" id="Rhi-2D-0s4"/>
+                            <constraint firstAttribute="width" constant="55" id="Rhi-2D-0s4"/>
                             <constraint firstItem="M0A-S2-QTX" firstAttribute="leading" secondItem="tjt-j6-UUt" secondAttribute="leading" constant="10" id="bPU-RU-L7D"/>
                             <constraint firstAttribute="height" constant="60" id="jB7-so-ZLh"/>
                             <constraint firstItem="M0A-S2-QTX" firstAttribute="centerY" secondItem="tjt-j6-UUt" secondAttribute="centerY" id="wl5-f7-rtv"/>
@@ -141,7 +139,7 @@
                         </userDefinedRuntimeAttributes>
                     </view>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tRq-Rm-W4F">
-                        <rect key="frame" x="275.5" y="209.5" width="19.5" height="22"/>
+                        <rect key="frame" x="295.5" y="209.5" width="19.5" height="22"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <state key="normal" image="plus.app" catalog="system"/>
@@ -170,14 +168,18 @@
                 <constraint firstItem="tjt-j6-UUt" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="HWb-fn-abQ"/>
                 <constraint firstAttribute="trailing" secondItem="Elu-cf-mPK" secondAttribute="trailing" constant="20" id="JW8-jO-Tsy"/>
                 <constraint firstItem="jQF-hm-ww4" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="20" id="Js8-cq-a4V"/>
+                <constraint firstAttribute="bottom" secondItem="euj-4F-QyA" secondAttribute="bottom" id="LZC-XR-WVu"/>
                 <constraint firstAttribute="trailing" secondItem="tjt-j6-UUt" secondAttribute="trailing" id="LsH-tq-UYt"/>
                 <constraint firstItem="Elu-cf-mPK" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="Ta2-kk-ypm"/>
                 <constraint firstItem="tRq-Rm-W4F" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="V47-Fx-gNT"/>
                 <constraint firstItem="jQF-hm-ww4" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="Yme-JB-L3d"/>
                 <constraint firstItem="Utb-Vz-Ohj" firstAttribute="top" secondItem="Elu-cf-mPK" secondAttribute="bottom" id="dhx-QT-c5y"/>
+                <constraint firstAttribute="trailing" secondItem="euj-4F-QyA" secondAttribute="trailing" id="hhg-8t-Lsf"/>
                 <constraint firstAttribute="bottom" secondItem="Utb-Vz-Ohj" secondAttribute="bottom" id="m4t-YT-LUi"/>
                 <constraint firstItem="TGT-yz-FM3" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="pxE-Gv-KMF"/>
                 <constraint firstAttribute="trailing" secondItem="Utb-Vz-Ohj" secondAttribute="trailing" constant="20" id="xjo-dQ-DRA"/>
+                <constraint firstItem="euj-4F-QyA" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="xvg-g0-4ss"/>
+                <constraint firstItem="euj-4F-QyA" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="zdn-u0-oyQ"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="360" height="441"/>
@@ -187,7 +189,7 @@
                 <outlet property="ShareBtn" destination="Ktt-bD-Bf7" id="vFm-HS-GSJ"/>
                 <outlet property="addBtn" destination="tRq-Rm-W4F" id="x9G-Kc-Yq7"/>
                 <outlet property="likeCount" destination="Ev6-A8-tJK" id="Hij-r4-3xT"/>
-                <outlet property="messageCount" destination="LmC-ke-9SP" id="1BV-t7-ZOW"/>
+                <outlet property="playerView" destination="euj-4F-QyA" id="TVH-f3-PJ0"/>
                 <outlet property="titleLbl" destination="TGT-yz-FM3" id="gLq-ps-2Z8"/>
                 <outlet property="videoProfileImage" destination="M0A-S2-QTX" id="5le-66-a90"/>
                 <outlet property="videoProfileView" destination="tjt-j6-UUt" id="cL5-NG-frx"/>
@@ -197,7 +199,7 @@
     </objects>
     <resources>
         <image name="arrowshape.turn.up.right.fill" catalog="system" width="128" height="106"/>
-        <image name="heart" catalog="system" width="128" height="109"/>
+        <image name="heart.fill" catalog="system" width="128" height="109"/>
         <image name="message.fill" catalog="system" width="128" height="113"/>
         <image name="pencil" catalog="system" width="128" height="113"/>
         <image name="plus.app" catalog="system" width="128" height="114"/>

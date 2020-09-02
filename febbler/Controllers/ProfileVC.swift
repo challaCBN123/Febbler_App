@@ -25,9 +25,11 @@ class ProfileVC: UIViewController {
         super.viewDidLoad()
         profileImage.image = profileImages
         profileName.text = profileNames
+        //profileImage.image = profileImages
         followersCountLbl.text = String(20)
         videoCountLbl.text = String(20)
         likesCountLbl.text = String(20)
+        
         profileImage.layer.cornerRadius = profileImage.frame.height/2
         // Do any additional setup after loading the view.
     }
