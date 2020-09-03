@@ -9,7 +9,7 @@
 import UIKit
 import GoogleSignIn
 import FirebaseAuth
-class LoginVC: UIViewController,GIDSignInDelegate   {
+class LoginVC: UIViewController,GIDSignInDelegate  {
   
     @IBOutlet weak var loginView: GIDSignInButton!
     override func viewDidLoad() {
@@ -29,7 +29,7 @@ class LoginVC: UIViewController,GIDSignInDelegate   {
          Auth.auth().signIn(with: credentials) { (authResult, error) in
          if let error = error {
          print(error.localizedDescription)
-         } else {
+         } 
             
             print("login successful")
          //This is where you should add the functionality of successful login
@@ -52,7 +52,7 @@ class LoginVC: UIViewController,GIDSignInDelegate   {
                       self.present(ProfVC, animated: false, completion: nil)
             
          //i.e. dismissing this view or push the home view controller etc
-         }
+         
     }
             
     

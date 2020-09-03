@@ -12,6 +12,10 @@ import AVKit
 
 
 class HomeVC: UIViewController {
+    let THEME_COLOUR = UIColor.systemGray.withAlphaComponent(0.5)
+     let LOADER_COLOR = UIColor.lightGray
+   var activityIndicator:UIActivityIndicatorView = UIActivityIndicatorView()
+    var titleLabel: UILabel = UILabel()
     @IBOutlet weak var btnView: UIView!
     @IBOutlet weak var btnViewHeight: NSLayoutConstraint!
     var myArray = NSArray()
@@ -34,14 +38,17 @@ class HomeVC: UIViewController {
         // Do any additional setup after loading the view.
     }
     func getData(){
+        self.startIndicator()
         BaseService.getDataFromUrl(baseUrl: baseURl, serviceUrl: serviceUrl) { (urlData, error) in
             //print(urlData)
             if error != nil {
                 print(error)
             }
+            self.stopIndicator()
             self.myArray = urlData as! NSArray
             //print(self.myArray)
             self.clView.reloadData()
+           // self.stopIndicator()
         }
     }
     func clViewNibFile(){
@@ -63,6 +70,8 @@ class HomeVC: UIViewController {
     @IBAction func didTap_SignIn(_ sender: UIButton) {
        goToLogInController()
     }
+    
+    
 }
 extension HomeVC{
     func goToSearchController(){
@@ -77,6 +86,47 @@ extension HomeVC{
              let logInController = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(identifier: "LoginVC") as! LoginVC
                     self.navigationController?.present(logInController, animated: true, completion: nil)
           }
+     func startIndicator()
+    {
+        //creating view to background while displaying indicator
+        let container: UIView = UIView()
+        container.frame = self.view.frame
+        container.center = self.view.center
+        container.backgroundColor = THEME_COLOUR
+
+        //creating view to display lable and indicator
+        let loadingView: UIView = UIView()
+        loadingView.frame = CGRect(x: 0, y: 0, width: 118, height: 80)
+        loadingView.center = self.view.center
+        loadingView.backgroundColor =  LOADER_COLOR
+        loadingView.clipsToBounds = true
+        loadingView.layer.cornerRadius = 10
+
+        //Preparing activity indicator to load
+        self.activityIndicator = UIActivityIndicatorView()
+        self.activityIndicator.frame = CGRect(x: 40, y: 12, width: 40, height: 40)
+        self.activityIndicator.style = UIActivityIndicatorView.Style.large
+        loadingView.addSubview(activityIndicator)
+
+        //creating label to display message
+        let label = UILabel(frame: CGRect(x: 5, y: 55,width: 120,height: 20))
+        label.text = "Loading..."
+        label.textColor = UIColor.white
+        label.bounds = CGRect(x: 0, y: 0, width: loadingView.frame.size.width / 2, height: loadingView.frame.size.height / 2)
+        label.font = UIFont.boldSystemFont(ofSize: 12)
+        loadingView.addSubview(label)
+        container.addSubview(loadingView)
+        self.view.addSubview(container)
+
+        self.activityIndicator.startAnimating()
+    }
+    func stopIndicator()
+    {
+        UIApplication.shared.endIgnoringInteractionEvents()
+            self.activityIndicator.stopAnimating()
+        ((self.activityIndicator.superview as UIView?)?.superview as UIView?)!.removeFromSuperview()
+    }
+    
 }
 extension HomeVC:UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,dataTransferDelegate{
     
@@ -113,6 +163,7 @@ extension HomeVC:UICollectionViewDelegate,UICollectionViewDataSource,UICollectio
     }
     func presentMsgVc(){
         let storyBoard = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(identifier: "messageVC") as! messageVC
+        storyBoard.modalPresentationStyle = .custom
         self.navigationController?.present(storyBoard, animated: true, completion: nil)
     }
     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {

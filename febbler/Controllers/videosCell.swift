@@ -40,10 +40,17 @@ class videosCell: UICollectionViewCell {
         
         playerLayer?.removeFromSuperlayer()
         player?.pause()
-        videoProfileView.roundCorners(cornerRadius: 20)
+        
+        self.roundCorners(myview: videoProfileView, cornerRadius: 20)
         videoProfileImage.layer.cornerRadius = self.videoProfileImage.frame.height/2
     }
-    
+    func roundCorners(myview:UIView,cornerRadius: Double) {
+          let path = UIBezierPath(roundedRect: myview.bounds, byRoundingCorners: [.topLeft, .bottomLeft], cornerRadii: CGSize(width: cornerRadius, height: cornerRadius))
+          let maskLayer = CAShapeLayer()
+          maskLayer.frame = myview.bounds
+          maskLayer.path = path.cgPath
+          myview.layer.mask = maskLayer
+      }
     @IBAction func didTapVideo_Like(_ sender: UIButton) {
         if isLikeClicked{
             LikeBtn.tintColor = .red
